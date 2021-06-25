@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="../css/main.css" rel="stylesheet">
     <meta name="description" content="Thank you. You took the first step to change your 
     life and that of a puppy. Before 6:00 p.m. we will contact you to be able to schedule
@@ -12,45 +13,42 @@
     <title>You Can - Thanks</title>
 </head>
 <body>
-    <header class="encabezado">
-        <!--SECCION 1-->
-        <!--LOGO A LA IZQUIERDA-->
-       <img class="encabezado__logo" src="./ImagesVideos/logo.png" style= "width: 20vw" alt="logo" />
-       <!--NOMBRE WEB CENTRADO-->
-       <P class="encabezado__tituloheader">YOU CAN</P>
-       <!--MENU DESPLEGABLE CENTRADO-->
-       <nav class="navbar navbar-expand-lg navbar-$color1 bg-#642430">
-           
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="naiconvbar-toggler-"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-             <ul class="navbar-nav">
-               <li class="nav-item active">
-                 <a class="nav-link" href="/index.html">Home <span class="sr-only"></span></a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="./Sites/findamatch.html">Find a Match</a>
-               </li>
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="./Sites/contact.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Contact
-                 </a>
-                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                   <a class="dropdown-item" href="./Sites/adopt.html">Adopt</a>
-                   <a class="dropdown-item" href="./Sites/volunteer.html">Volunteer</a>
-                   <a class="dropdown-item" href="./Sites/transit.html">Transit</a>
-                 </div>
-               </li>
-             </ul>
-           </div>
-         </nav>
-      </header>
-           
-       </nav>
-   </div>
+  <header class="encabezado">
+    <!--SECCION 1-->
+    <!--LOGO A LA IZQUIERDA-->
+   <img class="encabezado__logo" src="../Img/logo.png" style= "width: 20vw" alt="logo" />
+   <!--NOMBRE WEB CENTRADO-->
+   <P class="encabezado__tituloheader">YOU CAN</P>
+   <!--MENU DESPLEGABLE CENTRADO-->
+   <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Participate
+            </a>
+            <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="./adopt.html">Adopt</a></li>
+              <li><a class="dropdown-item" href="./transit.html">Transit</a></li>
+              <li><a class="dropdown-item" href="./volunteer.html">Volunteer</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  
+      
+    
+  
     <br>
-    <p>
+    <p class= "presentacion__texto1">
         Thanks for contact Us. We´ll be contacting You in the nexr 24hs so we can schedule a phonecall.
         <br>
         <br>
@@ -61,7 +59,7 @@
     <br>
     <br>
     <br>
-    <button> <a href="ideamirabelli.index.html">BACK TO HOME</a> </button>
+    <button class="botonaccion__form"> <a href="../index.html">BACK TO HOME</a> </button>
     </div>
     
     <br>
@@ -69,21 +67,37 @@
 
 
     <footer class="footer">
-        <!--LOGO A LA IZQUIERDA-->
-        <img src="../ImagesVideos/youcan.png" style= "max-width: 300px; max-height: 300px" alt="ingresar" />
-        <!--NOMBRE WEN CENTRADO-->
-        <P class="tituloheader">YOU CAN</P>
-        <!--MENU DESPLEGABLE A LA DERECHA-->
-        <nav>
-           
-            <a href="../ideamirabelli.index.html">Home</a>
-            <a href="./findamatch.html">Find a Match</a>
-            <a href="./adopt.html">Adopt</a>
-            <a href="./volunteer.html">Volunteer</a>
-            <a href="./transit.html">Transit</a>
-            <a href="./contact.html">Contact</a>
-            
-        </nav>
-      </footer>
-      </body>
-      </html>
+      <!--SECCION 1-->
+      <!--LOGO A LA IZQUIERDA-->
+     <img class="footer__logo2" src="../Img/logo2.png" style= "width: 20vw" alt="logo" />
+     <!--NOMBRE WEB CENTRADO-->
+     <div class="sitemap">
+       <h5> MAPA DEL SITIO</h5>
+      <p> 
+        <ul>
+          <li>
+            <a href="#presentacion"> About Us</a>
+          </li>
+          <li>  
+            <a href="#formulario"> Contact Us</a>
+          </li>
+          <li>
+            <a href="#participacion"> Be part of Us</a>
+          </li>  
+        </ul>
+    </div>
+     <P class="footer__titulo">YOU CAN</P>
+     <!--MENU RRSS-->
+     <div class="footer__botones">
+       <ul>
+         <li> <button type="button" class="btn btn-primary btn--facebook">Facebook</button> </li>
+         <li> <button type="button" class="btn btn-primary btn--instagram">Instagram</button> </li>
+         <li><button type="button" class="btn btn-primary btn--twitter">Twitter</button> </li>
+         <li><button type="button" class="btn btn-primary btn--home">Home</button> </li>
+        </ul>
+      </div>
+      
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>       
+  </body>
+    </html>

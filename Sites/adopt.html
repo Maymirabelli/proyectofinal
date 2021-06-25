@@ -16,78 +16,147 @@
   <header class="encabezado">
     <!--SECCION 1-->
     <!--LOGO A LA IZQUIERDA-->
-   <img class="encabezado__logo" src="./ImagesVideos/logo.png" style= "width: 20vw" alt="logo" />
+   <img class="encabezado__logo" src="../Img/logo.png" style= "width: 20vw" alt="logo" />
    <!--NOMBRE WEB CENTRADO-->
    <P class="encabezado__tituloheader">YOU CAN</P>
    <!--MENU DESPLEGABLE CENTRADO-->
-   <nav class="navbar navbar-expand-lg navbar-$color1 bg-#642430">
-       
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="naiconvbar-toggler-"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-         <ul class="navbar-nav">
-           <li class="nav-item active">
-             <a class="nav-link" href="/index.html">Home <span class="sr-only"></span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="./Sites/findamatch.html">Find a Match</a>
-           </li>
-           <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="./Sites/contact.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Contact
-             </a>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="./Sites/adopt.html">Adopt</a>
-               <a class="dropdown-item" href="./Sites/volunteer.html">Volunteer</a>
-               <a class="dropdown-item" href="./Sites/transit.html">Transit</a>
-             </div>
-           </li>
-         </ul>
-       </div>
-     </nav>
-</header>
-  
-<section id="formulario">
-  <!--SECCION 6-->
-   <h4> CONTACT US</h4> 
-   
-      <ul>
-       <li class="formulario__campos">
-         <label for="name">Name:</label><br>
-         <input type="text" id="name" name="user_name"><br></br>
-       </li>
-       <br></br>
-       <li class= "formulario__campos" >
-         <label for="mail">E-mail:</label><br>
-         <input type="email" id="mail" name="user_mail"> <br></br>
-       </li>
-       <br></br>
-       <li class= "formulario__campos">
-         <label for="msg">Message:</label><br>
-         <textarea id="msg" name="user_message"></textarea> <br></br>
-       </li>
-      </ul>
-      <button class="botonaccion"> <a href="Sites/thankyou.html">SEND</a> </button>
-  
-</section>
+   <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Participate
+            </a>
+            <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="./transit.html">Transit</a></li>
+              <li><a class="dropdown-item" href="./volunteer.html">Volunteer</a></li>
+              <li><a class="dropdown-item" href="./moreinfo.html">More Info</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
 
-<footer class="encabezado">
-<!--SECCION 1-->
-<!--LOGO A LA IZQUIERDA-->
-<img class="encabezado__logo" src="./ImagesVideos/logo.png" style= "width: 20vw" alt="logo" />
-<!--NOMBRE WEB CENTRADO-->
-<P class="encabezado__tituloheader">YOU CAN</P>
-<!--MENU RRSS-->
-<button type="button" class="btn btn-primary btn--facebook">Facebook</button>
-      <button type="button" class="btn btn-primary btn--instagram">Instagram</button>
-      <button type="button" class="btn btn-primary btn--twitter">Twitter</button>
-         </div>
-       </li>
-     </ul>
-   </div>
- </nav>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>       
+
+
+  <div class="presentacion">
+    <h1> ADOPTING CHANGE HARTS</h1>
+
+    <p class="presentacion__texto1"> Here You will find different kind of videos where You can learn about the process to adopt a dog 
+      and also we give tips so You can follow those at home during the first week
+    </p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="presentacion__txt"> 6 Rescue Dog Tips for your First Week Home</p>
+          <iframe class="presentacion__vid" src="https://www.youtube.com/embed/MfV97DUpWiQ"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ; controls="1"></iframe>
+        </div>
+
+        <div class="col">
+          <p class="presentacion__txt">Bringing Home Your Rescue Dog</p>
+          <iframe class="presentacion__vid" src="https://www.youtube.com/embed/B8sH9BHV_HM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ; controls="1" ></iframe>
+        </div>
+
+        <div class="col">
+          <p class="presentacion__txt"> 5 common mistakes new owners make</p>
+          <iframe class="presentacion__vid" src="https://www.youtube.com/embed/qd76ptAM5f4"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ; controls="1"></iframe>
+        </div>
+
+        <div class="col">
+          <p class="presentacion__txt"> How to Mentally Prepare for a New Dog</p>
+          <iframe class="presentacion__vid" src="https://www.youtube.com/embed/nfsHNvlrHzU"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ; controls="1"></iframe>    </section>
+        </div>
+
+        <div class="col">
+          <p class="presentacion__txt"> Figuring Out What You Want</p>
+          <iframe class="presentacion__vid" src="https://www.youtube.com/embed/HCHGmOnlOM0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ; controls="1"></iframe>
+        </div>
+
+        <div class="col">
+          <p class="presentacion__txt"> How to Pick a Shelter Dog</p>
+          <iframe class="presentacion__vid" src="https://www.youtube.com/embed/5BAebbfaStc"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ; controls="1"></iframe>
+        </div>
+      </div>
+    </div>
+    
+      
+  </div>
+
+  <section class="contactanos"> 
+      
+    <h4> CONTACT US</h4> 
+    
+    <div id="contacto">
+      
+            <!--SECCION FORMULARIOS WEB-->
+      
+        <section class="formulario">
+            
+                <ul>
+                <li class="formulario__campos">
+                  <label for="name">Name:</label><br>
+                  <input type="text" id="name" name="user_name"><br></br>
+                </li>
+                <br>
+                <li class= "formulario__campos" >
+                  <label for="mail">E-mail:</label><br>
+                  <input type="email" id="mail" name="user_mail"> <br></br>
+                </li>
+                <br>
+                <li class= "formulario__campos">
+                  <label for="msg">Message:</label><br>
+                  <textarea id="msg" name="user_message"></textarea> <br></br>
+                </li>
+                </ul>
+                <button class="botonaccion__form"> <a href="./thankyou.html">SEND</a> </button>
+
+        </section>    
+        <section class="locationmap">
+          <iframe   class="locationmap__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1801628.1092289279!2d-81.77135396557058!3d28.121975313756458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88de0fcb6cd26ab9%3A0x7c7263d51fa10e2b!2s1840%20Sarno%20Rd%2C%20Melbourne%2C%20FL%2032935%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1624220592362!5m2!1ses-419!2sar" loading="lazy"></iframe>
+        </section>
+          
+    </div>
+  </section>
+  <footer class="footer">
+    <!--SECCION 1-->
+    <!--LOGO A LA IZQUIERDA-->
+   <img class="footer__logo2" src="../Img/logo2.png" style= "width: 20vw" alt="logo" />
+   <!--NOMBRE WEB CENTRADO-->
+   <div class="sitemap">
+     <h5> MAPA DEL SITIO</h5>
+    <p> 
+      <ul>
+        <li>
+          <a href="#presentacion"> About Us</a>
+        </li>
+        <li>  
+          <a href="#formulario"> Contact Us</a>
+        </li>
+        <li>
+          <a href="#participacion"> Be part of Us</a>
+        </li>  
+      </ul>
+  </div>
+   <P class="footer__titulo">YOU CAN</P>
+   <!--MENU RRSS-->
+   <div class="footer__botones">
+     <ul>
+       <li> <button type="button" class="btn btn-primary btn--facebook">Facebook</button> </li>
+       <li> <button type="button" class="btn btn-primary btn--instagram">Instagram</button> </li>
+       <li><button type="button" class="btn btn-primary btn--twitter">Twitter</button> </li>
+       <li><button type="button" class="btn btn-primary btn--home">Home</button> </li>
+      </ul>
+    </div>
+    
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>       
 </body>
 </html>
