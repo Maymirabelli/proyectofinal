@@ -5,10 +5,10 @@ $fuente: Verdana;
 $titulosize: 40px;
 
 $redes: (
-    facebook: #185adb,
-    instagram: #fdb827,
-    twitter: #867ae9,
-    home: $color1
+    facebook: $color2,
+    instagram:$color2,
+    twitter:$color2,
+    home: $color2,
 );
 @each $red, $color in $redes{
     .btn--#{$red}{
@@ -154,31 +154,7 @@ $redes: (
         .footer__botones ul li{
             list-style: none;
         }
-    .sitemap {
-        display: inline-block;
-    }
-        .sitemap ul{
-            text-decoration: none;
-            justify-content: center;
-        }
-        .sitemap ul li{
-            list-style: none;
-            text-decoration: none;
-            justify-content: center;
-        }   
-        .sitemap h5{
-            font-family: verdana;
-            font-size: small;
-            color: $color2;
-            font-weight: bold;
-            text-decoration: none;
-            justify-content: center;
-        }
-        .sitemap a{
-            text-decoration: none;
-            font-family: $fuente;
-            color: $fontcolor;
-        }
+    
     
 
 .presentacion{
@@ -285,102 +261,90 @@ $redes: (
     align-content: center;
     align-items: center;
 }
-.contactanos{
+ 
+.container-form{
     background-color: $color2;
-    margin: 0vw;
-    max-height: 500vw;
 }
-    h4{
-        margin-top: 3vw;
-        font-family: Verdana; 
-        color: $color1 ; 
-        font-size: 40px; 
-        text-align: center;
-        font-weight: 500;
+    .contact-form__titulo {
+        margin: 10px 0 0 0;
+        font-family: Verdana;
+        color: $color1;
+    }
+    .contact-form__titulo1 {
+        margin: 5px 0 20px 0;
+        font-family: Verdana;
+        color: $color1;
+    }
+    #contact-form {
+        margin-left: 25vw;    
+        margin-top: 5vw;
+        margin-bottom: 5vw;
         background-color: $color2;
-    }    
-
-#contacto{
-    display: grid;
-    grid-template-areas: 
-    "formulario formulario mapa";
-    grid-template-columns: "33% 33% 33%"; 
+        padding: 10px 20px 30px 20px;
+        max-width:50%;
+        border-radius:7px;
+        -webkit-border-radius:7px;
+        -moz-border-radius:7px;
     }
-
-    .formulario { grid-area: formulario;}
-    .formulario { grid-area: formulario;}
-    .locationmap { grid-area: mapa;}
-
-
-    .formulario{
-            background-color: $color2;
-            border-style: solid;
-            border-color: $color2 ;
-            text-decoration: none;
-            display: inline-block;
-            flex-direction: column;
-    }
-            .formulario ul {
-            list-style-type: none;
-            text-decoration: none;
-            font-style: bold ;
-            color: $color1;
-            font-size: 20px;
-            align-content: center;
-            align-items: center;
-            
-            }
-            .formulario li{
-                text-decoration: none;
-                display: flex;
-                flex-direction: column;
-                font-style: bold ;
-                color: $color1;
-                font-size: 20px;
-            }
-            .formulario__campos{
-                display: flex;
-                align-content: center;
-                align-items: center;
-                
-            }
-            .botonaccion__form{
-                border: none;
-                align-content: center; 
-                background-color: $color2 ; 
-                transition: 2s ;
-                margin-bottom: 2vw; 
-                margin-left: 26vw;
-                border-style: solid;
-                border-color: $color1;
-            }
-            .botonaccion__form a{
-                font-family: Verdana; 
-                color:$color1 ; 
-                font-size: 20px; 
-                text-align: center; 
-                text-decoration: none
-            }
-            
-            .botonaccion__form:hover{
-                transform: scale(1.2,1.2);
-                background-color: $color1;
-            }
-            .botonaccion__form:hover a{
-                font-family: verdana;
-                color: $color2;
-            }
-            
-        .locationmap__map{
-            display: inline-block;
-            text-decoration: none;
-            width: 30vw;
-            height: 30vw;
-            margin-top: 10vw;
+        #contact-form input,   
+        #contact-form select,   
+        #contact-form textarea,   
+        #contact-form label { 
+            font-size: 15px;  
+            margin-bottom: 2px;
+            font-family: Verdana;
+        } 
+        #contact-form input,   
+        #contact-form select,   
+        #contact-form textarea { 
+            width:100%;
+            background:$color1;
+            border: 0; 
+            -moz-border-radius: 4px;  
+            -webkit-border-radius: 4px;  
+            border-radius: 4px;
+            margin-bottom: 25px;  
+            padding: 5px;  
+        }  
+        #contact-form input:focus,   
+        #contact-form select:focus,   
+        #contact-form textarea:focus {  
+            background-color: $color1; 
+        }  
+        #contact-form textarea {
+            width:100%;
+            height: 150px;
         }
-            
-            
-/*FORMATOS PAGINA ADOPT*/
+        #contact-form button[type="submit"] {
+            cursor:pointer;
+            width:100%;
+            border:none;
+            background: $color1;
+            color:$color2;
+            font-family: Verdana;
+            font-weight: bold;
+            margin:0 0 5px;
+            padding:10px;
+            border-radius:5px;
+        }
+        #contact-form button[type="submit"]:active {
+            box-shadow:inset $color2;
+        }
+        input:required, textarea:required {  
+            box-shadow: none;
+            -moz-box-shadow: none;  
+            -webkit-box-shadow: none;  
+            -o-box-shadow: none;  
+            font-family: Verdana;
+            color: $color2;  
+            font-weight:bold; 
+        } 
+        #contact-form .required {  
+            font-family: Verdana;
+            color: $color2;  
+            font-weight:bold;  
+        
+        }
 
 
 
