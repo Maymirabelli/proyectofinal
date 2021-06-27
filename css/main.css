@@ -8,7 +8,7 @@
   background: #642430; }
 
 .btn--home {
-  background: #642430; }
+  background: #fff1ac; }
 
 /*HEADER*/
 .encabezado {
@@ -331,50 +331,86 @@ input:required, textarea:required {
   .encabezado__tituloheader {
     font-size: 5vw;
     padding-top: 5vw; }
-  #contacto {
-    display: grid;
-    grid-template-areas: "formulario formulario formulario" "mapa mapa mapa";
-    grid-template-rows: "auto"; }
-  .formulario {
-    grid-area: formulario; }
-  .locationmap {
-    grid-area: mapa; }
-  .locationmap__map {
-    display: inline;
-    text-decoration: none;
-    width: 50vw;
-    height: 50vw;
-    margin-left: 30vw; }
-  .botonaccion__form {
-    border: none;
-    align-content: center;
-    background-color: #642430;
-    transition: 2s;
-    margin-bottom: 2vw;
-    margin-left: 45vw;
-    border-style: solid;
-    border-color: #fff1ac; }
-  .botonaccion__form a {
-    font-family: Verdana;
-    color: #fff1ac;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none; }
-  .botonaccion__form:hover {
-    transform: scale(1.2, 1.2);
-    background-color: #fff1ac; }
-  .botonaccion__form:hover a {
-    font-family: verdana;
-    color: #642430; }
   footer {
     width: auto;
     align-items: center;
     display: flex; } }
 
-.botonaccion
-.botonaccion:hover {
-  font-size: 5vw;
-  flex-wrap: wrap; }
+.nav {
+  background-color: #642430; }
+
+.container-fluid {
+  background-color: #642430; }
+
+.navbar-dark .navbar-brand {
+  font-family: Verdana;
+  font-size: 20px;
+  color: #fff1ac; }
+
+.navbar-brand {
+  font-family: Verdana;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 2vw;
+  background-color: #642430; }
+
+.navbar-toggler {
+  align-content: center;
+  text-align: right;
+  font-size: 15px;
+  flex-wrap: wrap;
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #642430;
+  border-style: solid;
+  border-width: 1vw;
+  border-color: #fff1ac; }
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  align-items: center; }
+
+#navbarDarkDropdownMenuLink {
+  font-family: Verdana;
+  color: #fff1ac;
+  text-decoration: none;
+  font-weight: bold; }
+
+.dropdown-menu {
+  display: inline-block;
+  position: relative;
+  background-color: #642430;
+  border-style: solid;
+  border-color: #fff1ac;
+  border-width: 1px;
+  text-decoration: none;
+  display: none; }
+
+.dropdown-menu ul li {
+  text-decoration: none; }
+
+.dropdown-menu ul li:hover ul {
+  display: block;
+  text-decoration: none; }
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  color: #fff1ac;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: #642430;
+  border: 0;
+  text-decoration: none; }
+
+.dropdown-item {
+  font-family: Verdana;
+  color: #fff1ac;
+  text-decoration: none; }
 
 /*CELULAR*/
 @media only screen and (max-width: 480px) {
