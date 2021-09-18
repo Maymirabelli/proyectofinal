@@ -13,6 +13,9 @@
     <title>You Can - Dog Shelter - Home</title>
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./css/java.js"></script>
+
     <header class="encabezado">
         <!--SECCION 1-->
         <!--LOGO A LA IZQUIERDA-->
@@ -164,9 +167,22 @@
                 </label> 
             </div>
             <div>
+                <label for="lastName">
+                  <span class="required">Name: *</span> 
+                  <input type="text" id="lastName" name="lastName" value="" placeholder="Your Lastname" required="required" tabindex="2" autofocus="autofocus" />
+                </label> 
+            </div>
+            <div>
                 <label for="email">
                   <span class="required">Email: *</span>
-                  <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+                  <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="3" required="required" />
+                </label>  
+            </div>
+            
+            <div>
+                <label for="phone">
+                  <span class="required">Phone: *</span>
+                  <input type="number" id="phone" name="phone" value="" placeholder="Your Phone" tabindex="4" required="required" />
                 </label>  
             </div>
             
@@ -178,7 +194,7 @@
                 </label>  
             </div>
             <div>		           
-              <a href= "./Sites/thankyou.html" class="btn btn-primary"> SEND</a> 
+              <button type="submit" href= "./Sites/thankyou.html" class="btn btn-primary"> SEND </button> 
             </div>
           </form>
       
