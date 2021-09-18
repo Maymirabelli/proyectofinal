@@ -265,17 +265,17 @@ $redes: (
 .container-form{
     background-color: $color2;
 }
-    .contact-form__titulo {
+    .contactform__titulo {
         margin: 10px 0 0 0;
         font-family: Verdana;
         color: $color1;
     }
-    .contact-form__titulo1 {
+    .contactform__titulo1 {
         margin: 5px 0 20px 0;
         font-family: Verdana;
         color: $color1;
     }
-    #contact-form {
+    #contactform {
         margin-left: 25vw;    
         margin-top: 5vw;
         margin-bottom: 5vw;
@@ -286,17 +286,17 @@ $redes: (
         -webkit-border-radius:7px;
         -moz-border-radius:7px;
     }
-        #contact-form input,   
-        #contact-form select,   
-        #contact-form textarea,   
-        #contact-form label { 
+        #contactform input,   
+        #contactform select,   
+        #contactform textarea,   
+        #contactform label { 
             font-size: 15px;  
             margin-bottom: 2px;
             font-family: Verdana;
         } 
-        #contact-form input,   
-        #contact-form select,   
-        #contact-form textarea { 
+        #contactform input,   
+        #contactform select,   
+        #contactform textarea { 
             width:100%;
             background:$color1;
             border: 0; 
@@ -306,16 +306,16 @@ $redes: (
             margin-bottom: 25px;  
             padding: 5px;  
         }  
-        #contact-form input:focus,   
-        #contact-form select:focus,   
-        #contact-form textarea:focus {  
+        #contactform input:focus,   
+        #contactform select:focus,   
+        #contactform textarea:focus {  
             background-color: $color1; 
         }  
-        #contact-form textarea {
+        #contactform textarea {
             width:100%;
             height: 150px;
         }
-        #contact-form button[type="submit"] {
+        #contactform button[type="submit"] {
             cursor:pointer;
             width:100%;
             border:none;
@@ -327,7 +327,7 @@ $redes: (
             padding:10px;
             border-radius:5px;
         }
-        #contact-form button[type="submit"]:active {
+        #contactform button[type="submit"]:active {
             box-shadow:inset $color2;
         }
         input:required, textarea:required {  
@@ -339,7 +339,7 @@ $redes: (
             color: $color2;  
             font-weight:bold; 
         } 
-        #contact-form .required {  
+        #contactform .required {  
             font-family: Verdana;
             color: $color2;  
             font-weight:bold;  

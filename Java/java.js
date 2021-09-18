@@ -1,24 +1,25 @@
-//aray de constructor de personas
-var listaPersonas = [];
-
-//constructor de perosnas
-class Persona {
-    constructor(name, lastName, email, phone) {
-        this.Name = name;
-        this.LastName = lastName;
-        this.Phone = phone;
-        this.Email = email;
+class Personas {
+    constructor(pName, pLastName, pEmail, pPhone) {
+        this.name = pName;
+        this.lastName = pLastName;
+        this.email = pEmail;
+        this.phone = pPhone;
+        
     }
-};
+}
 
-// Cuando se envia el formulario se crea una nueva persona y se envian los datos de los campos 
-// a las propiedades de cada obejeto
-$("#contact-form").submit(function (e) {
-    e.preventDefault();
-    var personas = new Persona($("input[name = 'name']").val(),
-                            $("input[name = 'lastName']").val(),
-                            $("input[name = 'email']").val(),
-                            $("input[name = 'phone']").val());
-    list.push(personas);
-    console.log(listaPersonas);
-});
+function validar(){
+    let contactformage = document.getElementById("age").value;
+    if (contactformage <= 18){
+        alert("You must be over 18 years of age to send this form");
+        datosOk = false;
+        
+    }
+    else if (isNaN(contactformage) || contactformage == ""){
+        alert ("You must enter your age to be able to validate the submission of the form")
+        datosOk = false
+    }
+    else{
+        datosOk = true;
+    }
+}
