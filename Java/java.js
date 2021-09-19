@@ -1,3 +1,4 @@
+
 //* CONSTRUCTOR DE PERSONAS 
 
 class People {
@@ -36,13 +37,14 @@ function userLoader (e) {
     if (datosOk) {
         let confirmData = confirm ("Do you want to send the data?")
         if (confirmData){
-            let pName = document.getElementById("name").value
-            let pAge = document.getElementById("age").value
-            let pEmail = document.getElementById("email").value
-            let pPhone = document.getElementById("phone").value
+            let pName = document.getElementById("name").value;
+            let pAge = document.getElementById("age").value;
+            let pEmail = document.getElementById("email").value;
+            let pPhone = document.getElementById("phone").value;
             
             let user = new People (pName, pAge, pEmail, pPhone)
             peopleList.push(user)
+            sendForm()
                          
         }
         else {
@@ -53,8 +55,9 @@ function userLoader (e) {
     
 }
 
-let peopleList = []
+let peopleList = [] ;
+
+//* ENVÍO DE DATOS DEL FORMULARIO
 
 
 
-$("#boton").on ("click", userLoader)
