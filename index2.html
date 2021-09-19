@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="./css/main.css" rel="stylesheet">
     <meta charset="UTF-8">
@@ -171,7 +172,7 @@
             <div>
                 <label for="age">
                   <span class="required">Age: *</span> 
-                  <input type="number" id="age" name="age" value="" placeholder="Your Age" required="required" tabindex="5" autofocus="autofocus" />
+                  <input type="number" id="age" name="age" value="" placeholder="Your Age" required="required" tabindex="2" autofocus="autofocus" />
                 </label> 
             </div>
 
@@ -196,16 +197,15 @@
                   <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
                 </label>  
             </div>
-            <div>		           
-              
-            </div>
+            <button id= "sendbutton" type="submit" class="btn btn-primary">SEND</button>
           </form>
 
-      </div id="sent"></div>
-
+         
       
       </div>
     </section>
+
+    <div id="dataSent"></div>
     <footer class="footer">
       <!--SECCION 1-->
       <!--LOGO A LA IZQUIERDA-->

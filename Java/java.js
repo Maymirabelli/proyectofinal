@@ -35,8 +35,8 @@ function userLoader (e) {
     e.preventDefault
     validar()
     if (datosOk) {
-        let confirmData = confirm ("Do you want to send the data?")
-        if (confirmData){
+        let confirmar = confirm ("Do you want to send the data?")
+        if (confirmar){
             let pName = document.getElementById("name").value;
             let pAge = document.getElementById("age").value;
             let pEmail = document.getElementById("email").value;
@@ -44,7 +44,7 @@ function userLoader (e) {
             
             let user = new People (pName, pAge, pEmail, pPhone)
             peopleList.push(user)
-            sendForm()
+            showUser()
                          
         }
         else {
@@ -55,9 +55,23 @@ function userLoader (e) {
     
 }
 
+// MOSTRAR DATOS ENVIADOS
+
+function showUser(){
+    for (let user of peopleList){
+        $($("#dataSent").append ( 
+        `<div class="User">
+        <h3>${user.name} The data you sent is:</h3>
+        <p> ${"pName" , "pAge" , "pEmail" , "pPhone"} </p>`)).fadeIn ("slow" , function(){
+            $("#dataSent").fadeOut("slow" , function(){
+                $("#dataSent").fadeIn("slow")
+            })
+        })
+    }
+}
+
 let peopleList = [] ;
 
-//* ENVÍO DE DATOS DEL FORMULARIO
+//* ENVÍO DE DATOS DEL FORMULARIO 
 
-
-
+$("#boton").on ("click", userLoader)
