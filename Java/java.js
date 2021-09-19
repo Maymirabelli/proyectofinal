@@ -57,5 +57,4 @@ let peopleList = []
 
 
 
-$("#button").on ("click", userLoader)
-
+$("#boton").on ("click", userLoader)
